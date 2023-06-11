@@ -9,24 +9,29 @@ public class Main {
         motorBeat.setMaxPenumpang(1);
         motorBeat.setNamaPengendara("Arkan");
         motorBeat.setNoPlat("B 1234 ABC");
-        Koleksi penumpang = motorBeat.getKoleksi();
+        Koleksi penumpangBeat = motorBeat.getKoleksi();
         System.out.println("======= Sepeda Motor =======");
         System.out.println("pengendara motor = " + motorBeat.getNamaPengendara());
         System.out.println("plat motor = " + motorBeat.getNoPlat());
         System.out.println("max penumpang motor = " + motorBeat.getMaxPenumpang());
-        penumpang.tambahKoleksi("1234567890", "Arkan");
-        penumpang.tambahKoleksi("1234511010", "Husain");
-        penumpang.tampilkanKoleksi();
+        penumpangBeat.tambahKoleksi("1234567890", "Arkan");
+        penumpangBeat.tambahKoleksi("1234511010", "Husain");
+        penumpangBeat.tampilkanKoleksi();
 
 
         Avanza.setMaxPenumpang(4);
         Avanza.setNamaPengendara("Budi");
         Avanza.setNoPlat("D 1234 ABC");
-
+        Koleksi penumpangAvanza = Avanza.getKoleksi();
         System.out.println("======= Mobil 5 =======");
         System.out.println("pengendara mobil = " + Avanza.getNamaPengendara());
         System.out.println("plat mobil = " + Avanza.getNoPlat());
         System.out.println("max penumpang mobil = " + Avanza.getMaxPenumpang());
+        penumpangAvanza.tambahKoleksi("1210101001", "Axel");
+        penumpangAvanza.tambahKoleksi("1010101001", "Givandra");
+        penumpangAvanza.tampilkanKoleksi();
+
+
 
         Xenia.setMaxPenumpang(6);
         Xenia.setNamaPengendara("Caca");

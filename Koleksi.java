@@ -1,6 +1,6 @@
 import java.util.HashMap;
 public class Koleksi {
-    static HashMap<String,String> hashMapKoleksi;
+    private HashMap<String,String> hashMapKoleksi;
 
     public Koleksi() {
         hashMapKoleksi = new HashMap<String, String>();
