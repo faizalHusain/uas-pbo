@@ -3,6 +3,7 @@ public class Kendaraan {
     private String noPlat;
     private String namaPengendara;
     private int maxPenumpang;
+    private Koleksi koleksi;
     // atribut koleksi
     // private Koleksi<Kendaraan> koleksi = new Koleksi<>();
    
@@ -10,7 +11,8 @@ public class Kendaraan {
     // deklarasi dan instansiasi kelas Koleksi dalam konstruktor kelas Kendaraan
     public Kendaraan() {
        // tambahkan koleksi
-    //    koleksi = new Koleksi<Kendaraan>();
+       //    koleksi = new Koleksi<Kendaraan>();
+       koleksi = new Koleksi();
     }
 
 
@@ -29,9 +31,14 @@ public class Kendaraan {
     public String getNamaPengendara() {
         return namaPengendara;
     }
+
     public String getNoPlat() {
         return noPlat;
-    }   
+    }
+    
+    public Koleksi getKoleksi() {
+        return koleksi;
+    }
 
     public void infoKendaraan(){
         System.out.println("Nama Pengendara: " + namaPengendara);
