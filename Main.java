@@ -10,13 +10,12 @@ public class Main {
         motorBeat.setNamaPengendara("Arkan");
         motorBeat.setNoPlat("B 1234 ABC");
         Koleksi penumpang = motorBeat.getKoleksi();
-        
-
         System.out.println("======= Sepeda Motor =======");
         System.out.println("pengendara motor = " + motorBeat.getNamaPengendara());
         System.out.println("plat motor = " + motorBeat.getNoPlat());
         System.out.println("max penumpang motor = " + motorBeat.getMaxPenumpang());
         penumpang.tambahKoleksi("1234567890", "Arkan");
+        penumpang.tambahKoleksi("1234511010", "Husain");
         penumpang.tampilkanKoleksi();
 
 
